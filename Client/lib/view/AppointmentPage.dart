@@ -1,14 +1,48 @@
+import 'package:ecardio/Providers/AppointmentFetch.dart';
+import 'package:ecardio/Providers/ProvidePatientInfo.dart';
 import 'package:ecardio/view/Edges/CurvedEdges.dart';
 
 import 'package:ecardio/view/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
-class AppointmentPage extends StatelessWidget {
-  const AppointmentPage({super.key});
+class AppointmentPage extends StatefulWidget {
+  // final int patID;
+  // final int docID;
+
+  // const AppointmentPage({Key? key, required this.patID, int? patientID}) : super(key: key);
+  // const AppointmentPage({super.key});
+
+  @override
+  State<AppointmentPage> createState() => _AppointmentPageState();
+}
+
+class _AppointmentPageState extends State<AppointmentPage> {
+  late int? patientID;
+
+
+  @override
+  void initState() {
+    
+    super.initState();
+    // patientID = widget.patID;
+    // fetchDoctor();
+  }
+
+  // Future<void> fetchDoctor() async {
+  //   final appProvider = Provider.of<AppointmentProvider>(context, listen: false);
+  //   await appProvider.fetchAppointmentDetails(patientID!);
+
+  //   // await appProvider.fetchDoctorDetails(doctorID);
+  // }
 
   @override
   Widget build(BuildContext context) {
+
+    // final patientProvider = Provider.of<PatientProvider>(context);
+
+    
     return Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.primaryColor,

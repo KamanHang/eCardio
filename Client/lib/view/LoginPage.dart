@@ -1,11 +1,13 @@
 import 'dart:async';
 
 import 'package:ecardio/Routes.dart';
+import 'package:ecardio/Providers/AuthProvider.dart';
 import 'package:ecardio/services/loginAuth.dart';
 import 'package:ecardio/view/RegisterPage.dart';
 import 'package:ecardio/view/Toasts/Toast.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -31,6 +33,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final authProvider = Provider.of<AuthProvider>(context, listen: false);
+    final loginStudent = LoginStudent(authProvider);
     return Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
@@ -203,14 +207,18 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(30),
                           ))),
                       onPressed: () async {
-                        String? response = await LoginStudent.login(
-                          email: _emailController.text,
-                          password: _passwordController.text,
-                        );
+                        await loginStudent.login(
+                      email: _emailController.text,
+                      password: _passwordController.text,
+                    );
+                        // String? response = await loginStudent.login(
+                        //   email: _emailController.text,
+                        //   password: _passwordController.text,
+                        // );
 
-                        print('Response: $response');
+                        // print('Response: $response');
 
-                        if (response == "200") {
+                        if (authProvider.isLoggedIn) {
                           loginSucessMethod();
                         } else {
                           Toast.loginFailToast(context);

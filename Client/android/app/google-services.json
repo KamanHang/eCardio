@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273514805049",
+    "project_id": "fyp-ecardio",
+    "storage_bucket": "fyp-ecardio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273514805049:android:1d4e80b8c69c8f1778dae8",
+        "android_client_info": {
+          "package_name": "com.example.ecardio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6sxTrEY-IjmkK_cvh_IctOHQB1pbJFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273514805049:android:82ca564d26f2439c78dae8",
+        "android_client_info": {
+          "package_name": "com.fyp.ecardio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6sxTrEY-IjmkK_cvh_IctOHQB1pbJFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "food": "Deep-Fried Foods",
+      "description": "Deep-fried foods like french fries, fried chicken, and fried snacks are high in unhealthy fats and can be difficult for the liver to process. They contribute to inflammation and should be avoided by jaundice patients.",
+      "image_url": "https://unsplash.com/photos/brown-and-black-food-on-black-pan-y-iedETDccY"
+    },
+    {
+      "id": 2,
+      "food": "Alcoholic Beverages",
+      "description": "Alcohol is known to worsen liver damage and impair liver function, making it particularly harmful for jaundice patients. Consumption of alcoholic beverages should be completely avoided during jaundice treatment.",
+      "image_url": "https://unsplash.com/photos/a-bunch-of-bottles-that-are-sitting-on-a-shelf-zVeg-_0gXww"
+    },
+    {
+      "id": 3,
+      "food": "Canned Soup",
+      "description": "Canned soups often contain high levels of sodium, which can lead to fluid retention and aggravate swelling, a common symptom of liver problems in jaundice patients. It's best to avoid canned soups.",
+      "image_url": "https://unsplash.com/photos/a-group-of-cans-of-food-flying-through-the-air-pr06YHOlUes"
+    },
+    {
+      "id": 4,
+      "food": "Processed Meats",
+      "description": "Processed meats such as sausages, hot dogs, and deli meats are high in unhealthy fats, sodium, and additives, which can strain the liver and worsen jaundice symptoms. They should be avoided.",
+      "image_url": "https://unsplash.com/photos/sausage-on-black-round-pan-cSxpCQrRlo8"
+    },
+    {
+      "id": 5,
+      "food": "Red Meat",
+      "description": "Red meat, including beef, lamb, and pork, contains high levels of saturated fats and cholesterol, which can burden the liver and exacerbate jaundice symptoms. It's better to opt for lean protein sources.",
+      "image_url": "https://unsplash.com/photos/raw-meat-on-blue-ceramic-bowl-eOktYr3tAMo"
+    },
+    {
+      "id": 6,
+      "food": "Sugary Snacks",
+      "description": "Sugary snacks like cakes, cookies, and candies can contribute to weight gain and fatty liver, worsening jaundice symptoms. These foods should be limited or avoided by jaundice patients.",
+      "image_url": "https://unsplash.com/photos/macarons-in-the-plate-hGthrwjHiM0"
+    },
+    {
+      "id": 7,
+      "food": "Highly Spiced Foods",
+      "description": "Foods with excessive spices or seasonings can irritate the digestive system and worsen symptoms for jaundice patients. It's best to opt for bland, easily digestible foods.",
+      "image_url": "https://unsplash.com/photos/green-vegetable-on-white-ceramic-plate-PqsImnjuElM"
+    },
+    {
+      "id": 8,
+      "food": "Caffeinated Beverages",
+      "description": "Caffeine found in beverages like coffee, tea, and energy drinks can be dehydrating and may interfere with liver function. Jaundice patients should limit their intake of caffeinated beverages.",
+      "image_url": "https://unsplash.com/photos/mug-of-coffee-z-N9uBKYJjs"
+    },
+    {
+      "id": 9,
+      "food": "Artificially Sweetened Drinks",
+      "description": "Artificial sweeteners found in diet sodas and sugar-free beverages can be hard for the liver to process and may contribute to liver inflammation. They should be avoided by jaundice patients.",
+      "image_url": "https://unsplash.com/photos/coca-cola-bottle-beside-drinking-glass-Qvnohn4GyJA"
+    }
+  ]
+  

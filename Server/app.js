@@ -1,4 +1,5 @@
 const express = require('express');
+// const bodyParser = require('body-parser');
 const routes = require('./routes/routes')
 const httpServer = require('http');
 const app = express();
@@ -8,6 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(express.urlencoded({extended: false}));
+// app.use(bodyParser.json({ limit: '10mb' }));
 
 
 const path = require("path");
@@ -41,8 +43,6 @@ const storageDoc = multer.diskStorage({
 
 const uploadDoc = multer({ storage: storageDoc });
 
-
-
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"))
 
@@ -50,24 +50,23 @@ app.get("/", (req, res)=> {
     return res.render("doctor");
 })
 
-
-
-
-// console.log(storage);
-
-// app.get("/", (req,res)=>{
-//     res.send("Hello World");
-// });
-
-
-app.get('/users', routes);
+app.post('/patientdetails', routes);
 app.post('/login', routes);
 app.post('/signup', upload.single("image"), routes);
 app.post('/doctor', uploadDoc.single("image"), routes);
 app.get('/doctordatafetch', routes);
+app.post('/doctordetails', routes)
+app.post('/bookAppointment', routes)
+app.post('/sendemail', routes)
+app.get('/getAppointment',routes)
+app.post('/fetchappointment',routes)
+app.post('/savemedicaldata',routes)
+app.post('/getmedicaldata', routes)
 
 
-// app.post('/upload', upload.single("image"),routes);
+
+
+
 
 
 

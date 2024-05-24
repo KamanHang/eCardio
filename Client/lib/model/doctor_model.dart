@@ -15,7 +15,7 @@ class DoctorModel {
     String workingTime;
     String description;
     String phoneNumber;
-    String rating;
+    String? rating;
     String image;
 
     DoctorModel({

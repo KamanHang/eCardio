@@ -1,29 +1,29 @@
-class patient {
+class PatientDetails {
   int? patientId;
   String? firstName;
   String? lastName;
   String? phoneNumber;
   String? email;
   String? password;
-  String? imagePath;
+  String? imagepath;
 
-  patient(
+  PatientDetails(
       {this.patientId,
       this.firstName,
       this.lastName,
       this.phoneNumber,
       this.email,
       this.password,
-      this.imagePath});
+      this.imagepath});
 
-  patient.fromJson(Map<String, dynamic> json) {
+  PatientDetails.fromJson(Map<String, dynamic> json) {
     patientId = json['patient_id'];
     firstName = json['first_name'];
     lastName = json['last_name'];
     phoneNumber = json['phone_number'];
     email = json['email'];
     password = json['password'];
-    imagePath = json['imagePath'];
+    imagepath = json['imagepath'];
   }
 
   Map<String, dynamic> toJson() {
@@ -34,7 +34,7 @@ class patient {
     data['phone_number'] = this.phoneNumber;
     data['email'] = this.email;
     data['password'] = this.password;
-    data['imagePath'] = this.imagePath;
+    data['imagepath'] = this.imagepath;
     return data;
   }
 }

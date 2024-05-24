@@ -1,5 +1,7 @@
 import 'package:ecardio/Routes.dart';
+import 'package:ecardio/services/ip_address.dart';
 import 'package:ecardio/view/Doctor.dart';
+import 'package:ecardio/view/LoginPage.dart';
 import 'package:ecardio/view/Toasts/Toast.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -35,7 +37,7 @@ class _RegisterState extends State<Register> {
     Toast.registerSuccessToast(context);
     await Future.delayed(const Duration(seconds: 4));
 
-    Navigator.pushNamed(context, Routes.bottomNavbar);
+    Navigator.pushNamed(context, Routes.loginScreen);
   }
 
   @override
@@ -462,9 +464,9 @@ class _RegisterState extends State<Register> {
                             borderRadius: BorderRadius.circular(30),
                           ))),
                       onPressed: () async {
-                        // Create a FormData object to include both form fields and the file
+                     
                         var formData = http.MultipartRequest('POST',
-                            Uri.parse('http://192.168.1.80:3000/signup'));
+                            Uri.parse('http://${newIP()}:3000/signup'));
 
                         // Add form fields
                         formData.fields.addAll({
@@ -531,7 +533,7 @@ class _RegisterState extends State<Register> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const Doctor()));
+                                    builder: (context) => const LoginPage()));
 
                             // Navigator.pushNamed(context, Routes.signUpScreen);
                             // Navigator.push(
