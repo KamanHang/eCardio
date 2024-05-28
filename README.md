@@ -7,7 +7,7 @@ eCardio is an under developing AI based health application which uses ECG Images
 </div>
 
 # Documentation of the Project Report and Software Requirement Specification
-- Report:  https://drive.google.com/file/d/1oi6VaHe2VOLG4lqkVP3hm8aqFRR1CnrY/view?usp=sharing
+- Report:  https://drive.google.com/file/d/1UCbez36hpXgPR_zSnYCWTR9kolFzBhlX/view?usp=sharing
 - SRS: https://drive.google.com/file/d/1nONXUFBV4verbsRtYaPDe7jO8n2PqiJ9/view?usp=sharing
 
 # Stack for this project used
