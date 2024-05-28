@@ -10,6 +10,11 @@ eCardio is an under developing AI based health application which uses ECG Images
 - Report:  https://drive.google.com/file/d/1UCbez36hpXgPR_zSnYCWTR9kolFzBhlX/view?usp=sharing
 - SRS: https://drive.google.com/file/d/1nONXUFBV4verbsRtYaPDe7jO8n2PqiJ9/view?usp=sharing
 
+# Model Train and Recommendation Notebook file
+- Model Train: https://drive.google.com/file/d/1QitIkhEPoNT-4mCwzeSUTQCHR3perbKs/view?usp=sharing
+- Recommendation System: https://drive.google.com/file/d/11oybcv4hcbub7CcVx--AktKp0Ata-94R/view?usp=sharing
+
+
 # Stack for this project used
 - Flutter Framework (Frontend)
 - Node JS (Express JS Framework) (Backend)
