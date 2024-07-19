@@ -20,7 +20,7 @@ eCardio is an under developing AI based health application which uses ECG Images
 - Node JS (Express JS Framework) (Backend)
 - Flask Web Framework (Hosting Trained Model locally)
 - Firebase Push Notification
-- Inception V3 CNN Model for Disease prediction
+- V6616 CNN Model for Disease prediction
 
 # • Detection & Prediction of Cardiovascular Disease from ECG and Medical reports
 <div align="center">
